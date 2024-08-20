@@ -1,0 +1,13 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  
+}
+
+body {
+  font-family: 'Oswald', sans-serif; /* Apply Oswald font to the whole document */
+}
+
+h1 {
+  font-family: 'Aclonica', sans-serif; /* Apply Aclonica font to all h1 elements */
+}

@@ -1,0 +1,47 @@
+.filter {
+    color: white;
+    border: 1px solid white;
+    height: 70vh;
+    width: 20%;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    background-image: radial-gradient(circle at top left, rgba(106, 17, 203, 0.8) 0%, rgba(37, 117, 252, 0.8) 100%);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; // Hidden by default
+  
+    &.filterVisible {
+      display: block; // Show when visible state is true
+      @media screen and (max-width: 768px) {
+        z-index: 10000; // Higher z-index for mobile
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+        padding-top: 100px;
+      }
+    }
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  
+    @media screen and (max-width: 768px) {
+      display: block; // Show only on mobile
+    }
+  }
+  

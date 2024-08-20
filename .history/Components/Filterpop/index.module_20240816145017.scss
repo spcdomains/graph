@@ -1,0 +1,50 @@
+.filter {
+    color: white;
+    border: 1px solid white;
+    height: 80vh;
+    width: 20%;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 168, 255, 1) 0%,
+      rgba(69, 128, 130, 1) 7%,
+      rgba(54, 136, 157, 1) 93%,
+      rgba(0, 168, 255, 1) 100%
+    );
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it's on top */
+  
+    &.filterVisible {
+      display: block; /* Show when visible state is true */
+      @media screen and (max-width: 768px) {
+        z-index: 10000; /* Higher z-index for mobile */
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+        padding-top: 100px;
+      }
+    }
+  
+    .search_box {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+  
+      input {
+        padding: 10px;
+        z-index: 1000; /* Ensure it's above other content */
+      }
+    }
+  }
+  

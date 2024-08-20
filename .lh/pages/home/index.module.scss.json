@@ -1,0 +1,38 @@
+{
+    "sourceFile": "pages/home/index.module.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1723871233289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723871251283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     padding-top: 0%;\r\n     font-weight: bolder;\r\n     font-size: larger;\r\n   }\r\n-  height: auto;\r\n+  height: 27vh;\r\n }\r\n .card {\r\n   display: flex;\r\n   flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1723871276722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     padding-top: 0%;\r\n     font-weight: bolder;\r\n     font-size: larger;\r\n   }\r\n-  height: 27vh;\r\n+\r\n }\r\n .card {\r\n   display: flex;\r\n   flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1723871308992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n .bg {\r\n   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);\r\n   margin: 0 auto;\r\n   margin-top: 20px;\r\n+  background-color:red;\r\n   width: 90%;\r\n   align-items: center;\r\n   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;\r\n   align-content: center;\r\n"
+                },
+                {
+                    "date": 1723871570232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n .bg {\r\n   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);\r\n   margin: 0 auto;\r\n   margin-top: 20px;\r\n-  background-color:red;\r\n   width: 90%;\r\n   align-items: center;\r\n   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;\r\n   align-content: center;\r\n"
+                },
+                {
+                    "date": 1723871575383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,97 @@\n+.container {\r\n+  background: #2f87ed;\r\n+  padding-top: 1%;\r\n+  width: 100%;\r\n+  padding-bottom: 150px;\r\n+  .cards{\r\n+    position: relative;\r\n+    top: 90px;\r\n+  }\r\n+  @media screen and (max-width:768px) {\r\n+    .cards{\r\n+      top: 30px;\r\n+    }\r\n+  }\r\n+}\r\n+@media screen and (max-width:768px) {\r\n+ .container{\r\n+  padding-bottom: 50px;\r\n+ }\r\n+}\r\n+\r\n+.cardContainer {\r\n+  display: flex;\r\n+  gap: 0%;\r\n+  @media screen and (max-width: 768px) {\r\n+    flex-direction: column;\r\n+  }\r\n+}\r\n+.bg {\r\n+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);\r\n+  margin: 0 auto;\r\n+  margin-top: 20px;\r\n+  width: 90%;\r\n+  align-items: center;\r\n+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;\r\n+  align-content: center;\r\n+  border: 6px solid black;\r\n+  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n+  border-radius: 15px;\r\n+  h1 {\r\n+    color: #ffc107;\r\n+    align-items: center;\r\n+    text-align: center;\r\n+    padding-top: 2%;\r\n+\r\n+  }\r\n+  p {\r\n+    color: white;\r\n+    text-align: center;\r\n+    padding-top: 0%;\r\n+    font-weight: bolder;\r\n+    font-size: larger;\r\n+  }\r\n+\r\n+}\r\n+.card {\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+  width: 24%;\r\n+  height: 50vh;\r\n+  //   border: 4px solid black;\r\n+  position: relative;\r\n+  //   padding-left: ;\r\n+  margin-left: 0.8%;\r\n+  margin-bottom: 2%;\r\n+  @media screen and (max-width: 768px) {\r\n+    margin-left: 0%;\r\n+    height: 43vh;\r\n+    width: 100%;\r\n+  }\r\n+  img {\r\n+    align-items: center;\r\n+    align-content: center;\r\n+    margin: 0 auto;\r\n+    // height: auto;width: auto;\r\n+    width: 100%;\r\n+    position: absolute;\r\n+    @media screen and (max-width: 768px) {\r\n+      margin-left: 0%;\r\n+      width: 100%;\r\n+      // position: relative;\r\n+    }\r\n+  }\r\n+  h1 {\r\n+    color: white;\r\n+    position: relative;\r\n+    padding-top: 0%;\r\n+    font-size: 27px;\r\n+    // margin: 0px;\r\n+    top: 70%;\r\n+    @media screen and (max-width: 768px) {\r\n+      font-size: 34px;\r\n+      top: 60%;\r\n+      color: white;\r\n+    }\r\n+  }\r\n+}\r\n"
+                }
+            ],
+            "date": 1723871233289,
+            "name": "Commit-0",
+            "content": ".container {\r\n  background: #2f87ed;\r\n  padding-top: 1%;\r\n  width: 100%;\r\n  padding-bottom: 150px;\r\n  .cards{\r\n    position: relative;\r\n    top: 90px;\r\n  }\r\n  @media screen and (max-width:768px) {\r\n    .cards{\r\n      top: 30px;\r\n    }\r\n  }\r\n}\r\n@media screen and (max-width:768px) {\r\n .container{\r\n  padding-bottom: 50px;\r\n }\r\n}\r\n\r\n.cardContainer {\r\n  display: flex;\r\n  gap: 0%;\r\n  @media screen and (max-width: 768px) {\r\n    flex-direction: column;\r\n  }\r\n}\r\n.bg {\r\n  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);\r\n  margin: 0 auto;\r\n  margin-top: 20px;\r\n  width: 90%;\r\n  align-items: center;\r\n  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;\r\n  align-content: center;\r\n  border: 6px solid black;\r\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n  border-radius: 15px;\r\n  h1 {\r\n    color: #ffc107;\r\n    align-items: center;\r\n    text-align: center;\r\n    padding-top: 2%;\r\n\r\n  }\r\n  p {\r\n    color: white;\r\n    text-align: center;\r\n    padding-top: 0%;\r\n    font-weight: bolder;\r\n    font-size: larger;\r\n  }\r\n  height: auto;\r\n}\r\n.card {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 24%;\r\n  height: 50vh;\r\n  //   border: 4px solid black;\r\n  position: relative;\r\n  //   padding-left: ;\r\n  margin-left: 0.8%;\r\n  margin-bottom: 2%;\r\n  @media screen and (max-width: 768px) {\r\n    margin-left: 0%;\r\n    height: 43vh;\r\n    width: 100%;\r\n  }\r\n  img {\r\n    align-items: center;\r\n    align-content: center;\r\n    margin: 0 auto;\r\n    // height: auto;width: auto;\r\n    width: 100%;\r\n    position: absolute;\r\n    @media screen and (max-width: 768px) {\r\n      margin-left: 0%;\r\n      width: 100%;\r\n      // position: relative;\r\n    }\r\n  }\r\n  h1 {\r\n    color: white;\r\n    position: relative;\r\n    padding-top: 0%;\r\n    font-size: 27px;\r\n    // margin: 0px;\r\n    top: 70%;\r\n    @media screen and (max-width: 768px) {\r\n      font-size: 34px;\r\n      top: 60%;\r\n      color: white;\r\n    }\r\n  }\r\n}\r\n"
+        }
+    ]
+}

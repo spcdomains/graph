@@ -1,0 +1,54 @@
+{
+    "sourceFile": "Components/Modal/index.module.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1723960254462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723960261822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   height:350px;\r\n     position: fixed;\r\n     top:300px;\r\n     left: 50%;\r\n-    width: 90%;\r\n+    width: 80%;\r\n     transform: translate(-50%, -50%);\r\n     background-color: white;\r\n     padding: 20px;\r\n     border: 1px solid #ccc;\r\n"
+                },
+                {
+                    "date": 1723960276279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n   }\r\n   \r\n   .inputContainer label {\r\n     display: block;\r\n+    width: 80%;\r\n     margin-bottom: 5px;\r\n   }\r\n   \r\n   .inputContainer input {\r\n"
+                },
+                {
+                    "date": 1723960292049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   }\r\n   \r\n   .inputContainer label {\r\n     display: block;\r\n-    width: 80%;\r\n+\r\n     margin-bottom: 5px;\r\n   }\r\n   \r\n   .inputContainer input {\r\n"
+                },
+                {
+                    "date": 1723960297559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,11 @@\n     margin-bottom: 5px;\r\n   }\r\n   \r\n   .inputContainer input {\r\n-    width: 100%;\r\n+    width: 80%;\r\n     padding: 8px;\r\n+\r\n     font-size: 16px;\r\n     border: 1px solid #ccc;\r\n     border-radius: 4px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1723960303638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     margin-bottom: 5px;\r\n   }\r\n   \r\n   .inputContainer input {\r\n-    width: 80%;\r\n+    width: 90%;\r\n     padding: 8px;\r\n \r\n     font-size: 16px;\r\n     border: 1px solid #ccc;\r\n"
+                },
+                {
+                    "date": 1723960470438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,14 +29,18 @@\n     margin-bottom: 5px;\r\n   }\r\n   \r\n   .inputContainer input {\r\n-    width: 90%;\r\n+\r\n     padding: 8px;\r\n \r\n     font-size: 16px;\r\n     border: 1px solid #ccc;\r\n     border-radius: 4px;\r\n+    @media screen and (max-width:768px) {\r\n+      width: 90%;\r\n+      \r\n+    }\r\n   }\r\n   \r\n   .buttonContainer {\r\n     margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1723960482233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     font-size: 16px;\r\n     border: 1px solid #ccc;\r\n     border-radius: 4px;\r\n     @media screen and (max-width:768px) {\r\n-      width: 90%;\r\n+      // width: 90%;\r\n       \r\n     }\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1723960492090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   height:350px;\r\n     position: fixed;\r\n     top:300px;\r\n     left: 50%;\r\n-    width: 80%;\r\n+    // width: 80%;\r\n     transform: translate(-50%, -50%);\r\n     background-color: white;\r\n     padding: 20px;\r\n     border: 1px solid #ccc;\r\n@@ -36,9 +36,9 @@\n     font-size: 16px;\r\n     border: 1px solid #ccc;\r\n     border-radius: 4px;\r\n     @media screen and (max-width:768px) {\r\n-      // width: 90%;\r\n+      width: 90%;\r\n       \r\n     }\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1723961002812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,11 @@\n     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\r\n     z-index: 1000;\r\n     // height: 100px;\r\n     overflow:scroll;\r\n+    @media screen and (max-width:768px) {\r\n+      width: 80%;\r\n+    }\r\n   }\r\n   \r\n   .modalContent {\r\n     max-width: 400px;\r\n"
+                }
+            ],
+            "date": 1723960254462,
+            "name": "Commit-0",
+            "content": ".modal {\r\n  height:350px;\r\n    position: fixed;\r\n    top:300px;\r\n    left: 50%;\r\n    width: 90%;\r\n    transform: translate(-50%, -50%);\r\n    background-color: white;\r\n    padding: 20px;\r\n    border: 1px solid #ccc;\r\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\r\n    z-index: 1000;\r\n    // height: 100px;\r\n    overflow:scroll;\r\n  }\r\n  \r\n  .modalContent {\r\n    max-width: 400px;\r\n    margin: 0 auto;\r\n  }\r\n  \r\n  .inputContainer {\r\n    margin-bottom: 15px;\r\n  }\r\n  \r\n  .inputContainer label {\r\n    display: block;\r\n    margin-bottom: 5px;\r\n  }\r\n  \r\n  .inputContainer input {\r\n    width: 100%;\r\n    padding: 8px;\r\n    font-size: 16px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 4px;\r\n  }\r\n  \r\n  .buttonContainer {\r\n    margin-top: 20px;\r\n    text-align: right;\r\n  }\r\n  \r\n  .buttonContainer button {\r\n    margin-left: 10px;\r\n    padding: 8px 16px;\r\n    font-size: 16px;\r\n    cursor: pointer;\r\n  }\r\n  \r\n  .buttonContainer button:first-child {\r\n    margin-left: 0;\r\n  }\r\n  "
+        }
+    ]
+}

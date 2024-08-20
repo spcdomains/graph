@@ -1,0 +1,30 @@
+{
+    "sourceFile": "pages/home/index.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1723808754332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723809247082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         <Game />\r\n         <Feature />\r\n         <About />\r\n         <Review />\r\n-        <div><a href=\"viber://add?number=9560498178\">Chat with me on Viber</a>\r\n+        {/* <div><a href=\"viber://add?number=9560498178\">Chat with me on Viber</a> */}\r\n         </div>\r\n       </div>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1723809252437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,8 @@\n         <Game />\r\n         <Feature />\r\n         <About />\r\n         <Review />\r\n-        {/* <div><a href=\"viber://add?number=9560498178\">Chat with me on Viber</a> */}\r\n-        </div>\r\n       </div>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1723961415271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n import Feature from \"@/Components/Featured\";\r\n import style from \"./index.module.scss\";\r\n import Image from \"next/image\";\r\n import Review from \"@/Components/Review\";\r\n+import Deal from '@/Components/Deal'\r\n \r\n const Index = () => {\r\n   const router = useRouter(); // Initialize useRouter hook\r\n   useEffect(() => {\r\n@@ -19,8 +20,9 @@\n   return (\r\n     <div className={style.container}>\r\n       <div className={style.cards}>\r\n         <Intro />\r\n+        <Deals/>\r\n         <Game />\r\n         <Feature />\r\n         <About />\r\n         <Review />\r\n"
+                }
+            ],
+            "date": 1723808754332,
+            "name": "Commit-0",
+            "content": "import React, { useEffect } from \"react\";\r\nimport { useRouter } from \"next/router\"; // Import useRouter from next/router\r\nimport Navbar from \"../../Components/Navbar\";\r\nimport Dashboardleft from \"../../Components/Dashboardleft\";\r\nimport Intro from \"@/Components/Intro\";\r\nimport Game from \"@/Components/Games\";\r\nimport About from \"@/Components/About\";\r\nimport Feature from \"@/Components/Featured\";\r\nimport style from \"./index.module.scss\";\r\nimport Image from \"next/image\";\r\nimport Review from \"@/Components/Review\";\r\n\r\nconst Index = () => {\r\n  const router = useRouter(); // Initialize useRouter hook\r\n  useEffect(() => {\r\n    const tokens = localStorage.getItem(\"accessToken\");\r\n    console.log(tokens);\r\n  }, []);\r\n  return (\r\n    <div className={style.container}>\r\n      <div className={style.cards}>\r\n        <Intro />\r\n        <Game />\r\n        <Feature />\r\n        <About />\r\n        <Review />\r\n        <div><a href=\"viber://add?number=9560498178\">Chat with me on Viber</a>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Index;\r\n"
+        }
+    ]
+}

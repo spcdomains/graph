@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    height: 3rem; /* Equivalent to h-12 in Tailwind */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position:fixed;
+    bottom: 0;
+  
+    .text {
+      margin: 0;
+    }
+  
+    .icon {
+      position: absolute;
+      height: 2.5rem; /* Equivalent to h-10 in Tailwind */
+      width: 3rem; /* Equivalent to w-12 in Tailwind */
+      bottom: 1.75rem; /* Equivalent to bottom-7 in Tailwind */
+      right: 3.5rem; /* Equivalent to right-14 in Tailwind */
+      cursor: pointer;
+      transition: transform 0.3s ease; /* For hover effect */
+      
+      &:hover {
+        transform: scale(1.10);
+      }
+  
+      &.mobile-hidden {
+        @media (max-width: 768px) {
+          display: none; /* Hide on mobile screens */
+        }
+      }
+    }
+  }
+  
